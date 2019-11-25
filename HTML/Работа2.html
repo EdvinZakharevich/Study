@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<HTML>
+
+		<STYLE>
+			form {
+				min-height: 300px;
+				background-color: grey;
+				padding: 15px;
+				margin: 15px;
+
+				}
+				#signup input[type="text"]{
+					background-color: lightgreen;
+					font-weight: bolder;
+					padding: 10px;
+					border: dashed;
+				}  
+
+				form#form_2 img{
+					width: 300px;
+					height: 300px;
+					float:left;
+				}
+
+				form#form_2 select{
+					margin-left: 40px;
+					clear: left;
+					color: red;
+				}
+
+				form#form_2 option[value="Россия"]{
+					font-weight: bolder;
+				}	
+
+				form#form_2 p{
+					margin-left: 40px;
+					margin-top: 20px;
+					float: left;
+					font-size: 15px;
+				}
+
+				form#form_2 input[type="checkbox"]{
+					margin-top: 22px;
+					margin-left: 10px;
+				}
+
+				form#form_2 input[type="submit"]{
+					margin-top: 20px;
+					margin-left: -120px;
+				}
+		</STYLE>
+
+
+	<HEAD>
+
+<TITLE>DOC</TITLE>
+
+
+	</HEAD>
+
+		<BODY>
+			
+			<form action="/servlet" method="get" name="TestForm" id="signup">
+			<p>First name</p>
+			<input type="text" name="firstname"><br>
+			<p>Password</p>
+			<input type="Password" name="Password"><br>
+			<input type="submit" name="Register" id="sub">
+		</form>
+
+
+	<form id="form_2">
+		<img src="47dafUgsS_s.jpg" id="img">
+		
+		<div>
+	  
+      <select>
+        <option>Выберите страну проживания</option>
+        <option value="Россия" id="bold">Россия</option> 
+        <option value="Украина">Украина</option> 
+        <option value="Беларусь">Беларусь</option> 
+        </select> 
+ 		</div>
+ 		
+
+ 		<div>
+ 			<p>Я резидент этой страны</p>
+ 		<a href="http://www.ifmo.ru/ru/"><input  type="checkbox" name="resident"></a>
+ 	    </div>
+			<input type="submit" value="Сохранить">
+		</form>
+		</BODY>
+
+</HTML>
+

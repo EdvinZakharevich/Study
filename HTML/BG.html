@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Change the Background Color Dynamically with JavaScript</title>
+<script>
+    
+    function changeBodyBg(color){
+        document.body.style.background = color;
+        document.getElementById("pl").style.color="blue";
+        document.getElementById("pl").style.fontFamily="Arial";
+    }
+
+
+    function ChangeText(){
+
+        document.getElementById("pl").innerHTML="New Text";
+    }
+</script>
+</head>
+<body>
+ 
+    <p id="intro">Привет мир!</p>
+    <p>something</p>
+    <p id="pl">Something Again</p>
+    <input type="button" onclick="ChangeText()" value="ChangeText">
+    
+    <button type="button" onclick="changeBodyBg('lavender');">Change Color</button>
+    
+</body>
+</html>                            
+
+

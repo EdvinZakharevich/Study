@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<HTML>
+<!-- комментарии -->
+<HEAD>
+<TITLE>Самая первая страница</TITLE>
+<LINK REL="stylesheet" TYPE="text/css" href="style.css">
+</HEAD>
+<BODY>
+<div><h1>Первая страница</h1></div>
+<zi><b>Первый параграф</b></p>
+	<p><span style="color:red;">Первый</span> <i>параграф</i></p>
+<p><u>Сложно</u><p>	
+
+<TABLE BORDER="1" CELLPADDING="30" BGCOLOR="RED">
+<TR>
+<TH  COLSPAN="2"  ROWSPAN="2" style="background-color:grey;"></TH>
+<TH  COLSPAN="2" style="background-color:grey;"></TH>
+
+
+</TR>
+<TR>
+<TD ALIGN="right" VALIGN="top" style="background-color:grey;"></TD>
+<TD style="background-color:grey;"></TD>
+</TR>
+<TR>HDD</TR>
+<TD ROWSPAN="2" style="background-color:grey;"></TD>
+<TD COLSPAN="3" style="background-color:grey;"></TD>
+
+</TR>
+<TR>
+<TD style="background-color:grey;"></TD>
+<TD style="background-color:grey;"></TD>
+<TD style="background-color:grey;"></TD>
+</TR>
+</TABLE>
+
+
+<FORM ACTION="/servlet" METHOD="GET" NAME="TestForm">
+Текстовое поле:
+<INPUT TYPE="text" name="lastname" SIZE="20" VALUE="Фамилия"><br>
+<TEXTAREA NAME="address" WRAP="virtual" COLS="40" ROWS="3">Ваш адрес...</TEXTAREA><br>
+<SELECT NAME="OS">
+<OPTION VALUE="DOS">MS-DOS</OPTION>
+<OPTION VALUE="WinXP">Windows 10</OPTION>
+<OPTION VALUE="Unix" SELECTED>UNIX</OPTION>
+<OPTION VALUE="WinNT">MS Windows NT</OPTION>
+</SELECT>
+<INPUT TYPE="hidden" NAME="info" VALUE="скрытое поле">
+<div>Выбор одного из значений:</div>
+<INPUT TYPE="radio" NAME="sex" VALUE="Male" CHECKED> мужчина<BR>
+<INPUT TYPE="radio" NAME="sex" VALUE="Female"> женщина<BR>
+Пароль:<INPUT TYPE="password" WIDTH="10" NAME="passwd"><BR><BR>
+<div>Выбор нескольких значений:</div>
+<INPUT TYPE="checkbox" NAME="m1">1<br>
+<INPUT TYPE="checkbox" NAME="m2">2<BR>
+<INPUT TYPE="checkbox" NAME="m3">3<BR>
+<INPUT TYPE="submit" VALUE="Отправить">
+</FORM>
+
+
+
+
+</BODY>
+</HTML>

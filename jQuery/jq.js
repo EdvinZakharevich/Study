@@ -1,28 +1,27 @@
 $(document).ready(function(){
 	$("input").attr("disabled", "disabled");
-$(".first_task").css("fontWeight", "bold");
-$(".first_task").css("color", "#445566");
-$(".first_task").css("fontsize", "15px");
-$("a").prepend("↗");
-$("a").attr('target','_blank');
+	$(".first_task").css("fontWeight", "bold");
+	$(".first_task").css("color", "#445566");
+	$(".first_task").css("fontsize", "15px");
+	$("a").prepend("↗");
+	$("a").attr('target','_blank');
 	$("[href^='http://']").each(function(){
 
 	$(this).attr("href", $(this).attr("href").replace("http://", "https://"));
 
 	});
 
-$(".button").click(function(){
+	$(".button").click(function(){
 	$("[href]").each(function(){
 		$(this).contents().eq(0).remove();
 	});
 	$("[href]").removeAttr("target");
 	$(this).prop("disabled", true);
 
-});
+	});
 
 
-
-	let tbl = document.createElement("table");
+    let tbl = document.createElement("table");
     let tblBody = document.createElement("tbody");
     let row = document.createElement("tr");
     let cell = document.createElement("td");
@@ -81,7 +80,7 @@ $(".button").click(function(){
     butt.setAttribute("id", "ajax");
     butt.innerHTML="Refresh";
     document.body.appendChild(butt);
-    $("button#ajax").click(function(){
+    $("#ajax").click(function(){
         $("p.first_task").load("https://inxaoc.github.io/example/ajax-1.html");
     });
 
@@ -90,12 +89,11 @@ $(".button").click(function(){
     butt2.innerHTML="Send";
     document.body.appendChild(butt2);
 
-    $("button#ajax2").click(function(){
+    $("#ajax2").click(function(){
         let temp = document.createElement("div");
         temp.setAttribute("id", "temp");
         document.body.appendChild(temp);
-        $(temp).load("https://inxaoc.github.io/example/ajax.json",
-            "authorization", onComplete);
+        $(temp).load("https://inxaoc.github.io/example/ajax.json", onComplete);
     });
 });
 
@@ -103,7 +101,6 @@ function onComplete(){
     let json = $(temp).html();
     $(temp).html("");
     let text = "";
-    //text = JSON.stringify(json, undefined, 4);
     for (let i = 0; i < json.length; i++) {
         if (json[i] == '{' || json[i] == '[') {
             text += "<ul><li>";
